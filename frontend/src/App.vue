@@ -29,7 +29,6 @@ v-for="link in links"
 <v-spacer></v-spacer>
 <v-toolbar-items class="hidden-sm-and-down">
 <v-btn
-text
 v-for="link in links"
 :key="link.title" :to="link.url"
 >
