@@ -15,7 +15,7 @@
 <v-list dense>
 <v-list-item
 v-for="link in links"
-:key="link.title"
+:key="link.title" :to="link.url"
 >
 <template v-slot:prepend>
 <v-icon :icon="link.icon"></v-icon>
@@ -31,7 +31,7 @@ v-for="link in links"
 <v-btn
 text
 v-for="link in links"
-:key="link.title"
+:key="link.title" :to="link.url"
 >
 <v-icon
 start
